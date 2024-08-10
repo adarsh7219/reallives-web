@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+:root {
+  --body-text: clamp(1rem, 1.125rem, 1.25rem);
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  background-color: #101010;
+  height: 100%;
+}
+
+.skeleton {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  height: 100%;
+  width: 95vw;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  gap: 1.25rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 4px;
+}
+
+.actions {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.left-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.country-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.approved-logo {
+  width: 70%;
+}
+
+.link {
+  color: #0c6af4;
+  font-style: italic;
+  text-decoration: none;
+  font-size: clamp(0.688rem, 0.75rem, 0.813rem);
+  font-weight: 600;
+}
+
+.display-flag {
+  display: flex;
+  gap: 1.25rem;
+  color: #fff;
+}
+
+.main-flag {
+  width: clamp(13.75rem, 15rem, 16.25rem);
+}
+
+.country-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(1.87rem, 2.188rem, 2.5rem);
+}
+
+.below-country-name {
+  font-style: italic;
+  font-weight: 600;
+  color: #c6c6c6;
+}
+
+.country-details {
+  color: #fff;
+  line-height: 25.88px;
+}
+
+.right-content {
+  background-color: #0d0d0d;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  box-sizing: border-box;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: clamp(0.625rem, 0.688rem, 0.75rem);
+  color: #c2c2c2;
+  font-weight: 500;
+}
+
+.flag-and-stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.numbers {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.188rem, 1.25rem);
+}
+
+.action-primary {
+  padding: 10px 28px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  background-image: linear-gradient(to bottom, #0c6af4, #004bba);
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.063rem, 1.125rem);
+  color: #fff;
+}
+
+.arrow {
+  width: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
